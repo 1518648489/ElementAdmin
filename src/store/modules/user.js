@@ -53,7 +53,6 @@ const actions = {
           return reject('Verification failed, please Login again.')
         }
 
-
         commit('SET_NAME', data.data.account)
         commit('SET_AVATAR', data.data.photo)
         resolve(data)
